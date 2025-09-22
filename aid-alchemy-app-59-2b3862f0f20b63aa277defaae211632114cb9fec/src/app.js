@@ -19,3 +19,14 @@ const handleLogin=async (email,password)=>
     const {data,error}=await
     supabase.auth.signInWithPassword({email,password});
 };
+
+import React from "react";
+import Caretaker_list from './caretakerlist';
+
+function App(){
+    PaymentRequestUpdateEvent(
+        <div className="App"><Caretaker_list /></div>
+    );
+}
+
+export default App;
